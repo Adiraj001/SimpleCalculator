@@ -24,7 +24,7 @@ public class Calculator {
     JPanel Panel = new JPanel();
     JPanel ButtonsPanel = new JPanel();
 
-    // Calculator state
+    
     String currentInput = "";
     double firstOperand = 0;
     String operator = "";
@@ -47,7 +47,7 @@ public class Calculator {
         Display.setOpaque(true);
         Display.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
 
-        // Main panel for display
+       y
         Panel.setLayout(new BorderLayout());
         Panel.setBackground(A1);
         Panel.add(Display, BorderLayout.CENTER);
@@ -59,7 +59,7 @@ public class Calculator {
         ButtonsPanel.setBackground(A1);
         ButtonsPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        // Add buttons
+       
         for (int i = 0; i < ButtonLabels.length; i++) {
             JButton button = new JButton(ButtonLabels[i]);
             button.setFont(new Font("Arial", Font.BOLD, 24));
@@ -82,7 +82,7 @@ public class Calculator {
             button.setBorder(BorderFactory.createLineBorder(A3, 1));
             ButtonsPanel.add(button);
 
-            // Action listeners
+            
             final String label = ButtonLabels[i];
             button.addActionListener(e -> handleButton(label));
         }
